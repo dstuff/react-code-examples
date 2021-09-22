@@ -1,0 +1,26 @@
+@import '~@apollo/apollo-ui-reactjs/src/styles/main';
+
+$tab-panel-height: 54px;
+
+.subLabel {
+  font-weight: 600;
+  color: var(--color-grey1);
+}
+
+.popupHeader {
+  :global(.ui-snack-bars--with-snack-bar) {
+    position: absolute;
+    top: 0;
+  }
+
+  :global(.ui-snack-bars__clearer) {
+    height: 24px;
+  }
+}
+
+.loaderWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - #{$tab-panel-height});
+}

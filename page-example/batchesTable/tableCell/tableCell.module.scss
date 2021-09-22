@@ -1,0 +1,20 @@
+@import '~@apollo/apollo-ui-reactjs/src/styles/main';
+
+:global(.ui-data-table-cell__children) {
+  justify-content: flex-start;
+}
+
+.cellText {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.action_buttonContainer {
+  max-width: 100px;
+
+  :global(.ui-button-icon) {
+    margin: 0 auto;
+    width: 52px;
+    height: 36px;
+  }
+}

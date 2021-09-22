@@ -1,0 +1,24 @@
+@import '~@apollo/apollo-ui-reactjs/src/styles/main';
+@import '../batchSettingsPopup.module';
+
+$item-height: 48px;
+$base-spacing: 16px;
+
+.body {
+  width: 100%;
+
+  :global(.ui-typography--body1) {
+    color: var(--color-grey7);
+    line-height: normal;
+  }
+
+  &:first-child {
+    margin-top: calc(-1 * var(--main-spacing));
+  }
+
+  padding-bottom: 18px;
+}
+
+.emptyData {
+  padding-top: $base-spacing;
+}

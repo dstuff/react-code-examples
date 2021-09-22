@@ -1,0 +1,40 @@
+@import '~@apollo/apollo-ui-reactjs/src/styles/main';
+
+.formContainer__combinedFields {
+  display: inline-flex;
+  align-items: center;
+
+  .formContainer__combinedField {
+    flex: 1;
+    margin-right: var(--gutter-small);
+
+    :global(.helper-text) {
+      height: var(--gutter-small);
+    }
+
+    .labelImitationContainer {
+      height: var(--gutter-medium);
+
+      &--dateError {
+        height: var(--small-spacing);
+      }
+    }
+
+    &:last-child {
+      margin-right: unset;
+    }
+  }
+
+  .formContainer__trashButton {
+    margin-top: var(--small-spacing);
+    :global(.ui-button-icon) {
+      background-color: $color-white;
+    }
+  }
+}
+
+.dividerContainer {
+  :global(.ui-divider) {
+    margin: var(--gutter-small) 0;
+  }
+}

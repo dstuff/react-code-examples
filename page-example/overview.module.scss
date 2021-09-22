@@ -1,0 +1,24 @@
+$main-spacing: 60px;
+
+.page__header {
+  :global(.ui-page-header) {
+    margin: 0;
+  }
+}
+
+.page__body {
+  position: relative;
+  display: flex;
+  height: calc(100vh - var(--main-nav-height) - 90px);
+}
+
+.page__search_box_container {
+  display: flex;
+}
+
+.page__tab {
+  display: flex;
+  flex-direction: column;
+  padding: $main-spacing;
+  gap: 16px;
+}

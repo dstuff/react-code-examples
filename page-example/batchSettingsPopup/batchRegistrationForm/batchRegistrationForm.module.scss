@@ -1,0 +1,30 @@
+@import '~@apollo/apollo-ui-reactjs/src/styles/main';
+@import '../batchSettingsPopup.module';
+
+$base-spacing: calc(var(--base-spacing) * 2);
+
+.formContainer {
+  width: 100%;
+  padding-top: calc(var(--base-spacing) * 2);
+
+  &__formLoader {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  &__fieldWrapper {
+    margin-bottom: 16px;
+
+    :global(.ui-toggle__label) {
+      font-size: $body1-font-size;
+      font-weight: normal;
+      color: $color-primary;
+    }
+  }
+
+  &__toggleWrapper {
+    padding: $base-spacing 0 $base-spacing var(--main-spacing);
+    border-bottom: 1px solid var(--color-grey4);
+  }
+}
